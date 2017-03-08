@@ -1,0 +1,11 @@
+C:\Users\DELL\AppData\Local\Temporary Projects\Task-02.05\bin\Debug\Task-02.05.exe.config
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\bin\Debug\Task-02.05.exe.config
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\obj\Debug\Task_02._05.frmValidation.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\obj\Debug\Task_02._05.Resources.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\obj\Debug\Task-02.05.vbproj.GenerateResource.Cache
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\bin\Debug\Task-02.05.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\bin\Debug\Task-02.05.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\bin\Debug\Task-02.05.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\obj\Debug\Task-02.05.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\obj\Debug\Task-02.05.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.05\Task-02.05\obj\Debug\Task-02.05.pdb

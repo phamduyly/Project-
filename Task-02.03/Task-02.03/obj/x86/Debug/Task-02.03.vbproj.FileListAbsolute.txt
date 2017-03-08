@@ -1,0 +1,18 @@
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmValidation.resources
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\Task-02.03.vbproj.GenerateResource.Cache
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\bin\Debug\Task-02.03.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\bin\Debug\Task-02.03.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\bin\Debug\Task-02.03.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\WindowsApplication1.frmValidation.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.vbproj.GenerateResource.Cache
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.pdb

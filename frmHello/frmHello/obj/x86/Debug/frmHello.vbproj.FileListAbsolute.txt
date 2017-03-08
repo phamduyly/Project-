@@ -1,0 +1,18 @@
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\bin\Debug\frmHello.exe
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\bin\Debug\frmHello.pdb
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\bin\Debug\frmHello.xml
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\obj\x86\Debug\WindowsApplication1.frmHello.resources
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.vbproj.GenerateResource.Cache
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.exe
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.xml
+C:\Users\s3594800\documents\visual studio 2010\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\bin\Debug\frmHello.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\bin\Debug\frmHello.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\bin\Debug\frmHello.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\obj\x86\Debug\WindowsApplication1.frmHello.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\frmHello\frmHello\obj\x86\Debug\frmHello.vbproj.GenerateResource.Cache

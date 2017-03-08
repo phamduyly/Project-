@@ -1,0 +1,18 @@
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmValidate.resources
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\Task-02.04.vbproj.GenerateResource.Cache
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\DELL\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\bin\Debug\Task-02.04.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\bin\Debug\Task-02.04.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\bin\Debug\Task-02.04.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.vbproj.GenerateResource.Cache
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.exe
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.xml
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.pdb
+C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\WindowsApplication1.frmValidation.resources
