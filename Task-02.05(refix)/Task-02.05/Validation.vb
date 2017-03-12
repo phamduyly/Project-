@@ -24,10 +24,10 @@ Public Class Validation
 
     Public Function isAlphaNumericVal(ByVal strVal As String) As Boolean
         'a public function to check strVal right or wrong
-        Dim pattern As Regex = New Regex("[^a-zA-Z0-0-_]")
+        Dim pattern As Regex = New Regex("^[a-zA-Z]+[0-9 _]")
         'checking the string whether its contains only alphanumeric value
         If strVal.Length > 0 Then
-            Return Not pattern.IsMatch(strVal)
+            Return pattern.IsMatch(strVal)
         Else
             Return False
         End If
