@@ -23,22 +23,22 @@ Partial Class frmProduct
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxInputFields = New System.Windows.Forms.GroupBox()
-        Me.lblHeadingName = New System.Windows.Forms.Label()
-        Me.lblHeadingCategory = New System.Windows.Forms.Label()
-        Me.txtDescription = New System.Windows.Forms.TextBox()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.lblHeadingUnitPrice = New System.Windows.Forms.Label()
-        Me.lblHeadingLeadTime = New System.Windows.Forms.Label()
-        Me.lblHeadingRecorderLevel = New System.Windows.Forms.Label()
-        Me.lblHeadingDiscontinued = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.SKU = New System.Windows.Forms.Label()
+        Me.chkDiscontinued = New System.Windows.Forms.CheckBox()
+        Me.lblHeadingDescription = New System.Windows.Forms.Label()
+        Me.txtUnitPrice = New System.Windows.Forms.TextBox()
         Me.txtLeadTime = New System.Windows.Forms.TextBox()
         Me.txtRecorderLevel = New System.Windows.Forms.TextBox()
         Me.txtCategory = New System.Windows.Forms.TextBox()
-        Me.txtUnitPrice = New System.Windows.Forms.TextBox()
-        Me.lblHeadingDescription = New System.Windows.Forms.Label()
-        Me.chkDiscontinued = New System.Windows.Forms.CheckBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.SKU = New System.Windows.Forms.Label()
+        Me.lblHeadingDiscontinued = New System.Windows.Forms.Label()
+        Me.lblHeadingUnitPrice = New System.Windows.Forms.Label()
+        Me.lblHeadingLeadTime = New System.Windows.Forms.Label()
+        Me.lblHeadingRecorderLevel = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.lblHeadingCategory = New System.Windows.Forms.Label()
+        Me.lblHeadingName = New System.Windows.Forms.Label()
         Me.btnNew = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
@@ -71,37 +71,77 @@ Partial Class frmProduct
         Me.gbxInputFields.TabStop = False
         Me.gbxInputFields.Text = "Product Details"
         '
-        'lblHeadingName
+        'TextBox1
         '
-        Me.lblHeadingName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHeadingName.Location = New System.Drawing.Point(18, 68)
-        Me.lblHeadingName.Name = "lblHeadingName"
-        Me.lblHeadingName.Size = New System.Drawing.Size(138, 20)
-        Me.lblHeadingName.TabIndex = 2
-        Me.lblHeadingName.Text = "Product Name"
+        Me.TextBox1.Location = New System.Drawing.Point(165, 36)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(215, 20)
+        Me.TextBox1.TabIndex = 17
         '
-        'lblHeadingCategory
+        'SKU
         '
-        Me.lblHeadingCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHeadingCategory.Location = New System.Drawing.Point(18, 119)
-        Me.lblHeadingCategory.Name = "lblHeadingCategory"
-        Me.lblHeadingCategory.Size = New System.Drawing.Size(138, 20)
-        Me.lblHeadingCategory.TabIndex = 3
-        Me.lblHeadingCategory.Text = "Category"
+        Me.SKU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SKU.Location = New System.Drawing.Point(18, 36)
+        Me.SKU.Name = "SKU"
+        Me.SKU.Size = New System.Drawing.Size(138, 20)
+        Me.SKU.TabIndex = 16
+        Me.SKU.Text = "SKU"
+        Me.SKU.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'txtDescription
+        'chkDiscontinued
         '
-        Me.txtDescription.Location = New System.Drawing.Point(165, 92)
-        Me.txtDescription.Name = "txtDescription"
-        Me.txtDescription.Size = New System.Drawing.Size(215, 20)
-        Me.txtDescription.TabIndex = 4
+        Me.chkDiscontinued.AutoSize = True
+        Me.chkDiscontinued.Location = New System.Drawing.Point(165, 242)
+        Me.chkDiscontinued.Name = "chkDiscontinued"
+        Me.chkDiscontinued.Size = New System.Drawing.Size(15, 14)
+        Me.chkDiscontinued.TabIndex = 15
+        Me.chkDiscontinued.UseVisualStyleBackColor = True
         '
-        'txtName
+        'lblHeadingDescription
         '
-        Me.txtName.Location = New System.Drawing.Point(165, 66)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(215, 20)
-        Me.txtName.TabIndex = 5
+        Me.lblHeadingDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHeadingDescription.Location = New System.Drawing.Point(18, 92)
+        Me.lblHeadingDescription.Name = "lblHeadingDescription"
+        Me.lblHeadingDescription.Size = New System.Drawing.Size(138, 20)
+        Me.lblHeadingDescription.TabIndex = 14
+        Me.lblHeadingDescription.Text = "Product Desciption"
+        '
+        'txtUnitPrice
+        '
+        Me.txtUnitPrice.Location = New System.Drawing.Point(165, 209)
+        Me.txtUnitPrice.Name = "txtUnitPrice"
+        Me.txtUnitPrice.Size = New System.Drawing.Size(215, 20)
+        Me.txtUnitPrice.TabIndex = 13
+        '
+        'txtLeadTime
+        '
+        Me.txtLeadTime.Location = New System.Drawing.Point(165, 178)
+        Me.txtLeadTime.Name = "txtLeadTime"
+        Me.txtLeadTime.Size = New System.Drawing.Size(215, 20)
+        Me.txtLeadTime.TabIndex = 12
+        '
+        'txtRecorderLevel
+        '
+        Me.txtRecorderLevel.Location = New System.Drawing.Point(165, 149)
+        Me.txtRecorderLevel.Name = "txtRecorderLevel"
+        Me.txtRecorderLevel.Size = New System.Drawing.Size(215, 20)
+        Me.txtRecorderLevel.TabIndex = 11
+        '
+        'txtCategory
+        '
+        Me.txtCategory.Location = New System.Drawing.Point(162, 119)
+        Me.txtCategory.Name = "txtCategory"
+        Me.txtCategory.Size = New System.Drawing.Size(215, 20)
+        Me.txtCategory.TabIndex = 10
+        '
+        'lblHeadingDiscontinued
+        '
+        Me.lblHeadingDiscontinued.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHeadingDiscontinued.Location = New System.Drawing.Point(18, 240)
+        Me.lblHeadingDiscontinued.Name = "lblHeadingDiscontinued"
+        Me.lblHeadingDiscontinued.Size = New System.Drawing.Size(138, 20)
+        Me.lblHeadingDiscontinued.TabIndex = 9
+        Me.lblHeadingDiscontinued.Text = "Discontinued"
         '
         'lblHeadingUnitPrice
         '
@@ -130,77 +170,37 @@ Partial Class frmProduct
         Me.lblHeadingRecorderLevel.TabIndex = 6
         Me.lblHeadingRecorderLevel.Text = "Recorder Level"
         '
-        'lblHeadingDiscontinued
+        'txtName
         '
-        Me.lblHeadingDiscontinued.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHeadingDiscontinued.Location = New System.Drawing.Point(18, 240)
-        Me.lblHeadingDiscontinued.Name = "lblHeadingDiscontinued"
-        Me.lblHeadingDiscontinued.Size = New System.Drawing.Size(138, 20)
-        Me.lblHeadingDiscontinued.TabIndex = 9
-        Me.lblHeadingDiscontinued.Text = "Discontinued"
+        Me.txtName.Location = New System.Drawing.Point(165, 66)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(215, 20)
+        Me.txtName.TabIndex = 5
         '
-        'txtLeadTime
+        'txtDescription
         '
-        Me.txtLeadTime.Location = New System.Drawing.Point(165, 178)
-        Me.txtLeadTime.Name = "txtLeadTime"
-        Me.txtLeadTime.Size = New System.Drawing.Size(215, 20)
-        Me.txtLeadTime.TabIndex = 12
+        Me.txtDescription.Location = New System.Drawing.Point(165, 92)
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(215, 20)
+        Me.txtDescription.TabIndex = 4
         '
-        'txtRecorderLevel
+        'lblHeadingCategory
         '
-        Me.txtRecorderLevel.Location = New System.Drawing.Point(165, 149)
-        Me.txtRecorderLevel.Name = "txtRecorderLevel"
-        Me.txtRecorderLevel.Size = New System.Drawing.Size(215, 20)
-        Me.txtRecorderLevel.TabIndex = 11
+        Me.lblHeadingCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHeadingCategory.Location = New System.Drawing.Point(18, 119)
+        Me.lblHeadingCategory.Name = "lblHeadingCategory"
+        Me.lblHeadingCategory.Size = New System.Drawing.Size(138, 20)
+        Me.lblHeadingCategory.TabIndex = 3
+        Me.lblHeadingCategory.Text = "Category"
         '
-        'txtCategory
+        'lblHeadingName
         '
-        Me.txtCategory.Location = New System.Drawing.Point(162, 119)
-        Me.txtCategory.Name = "txtCategory"
-        Me.txtCategory.Size = New System.Drawing.Size(215, 20)
-        Me.txtCategory.TabIndex = 10
-        '
-        'txtUnitPrice
-        '
-        Me.txtUnitPrice.Location = New System.Drawing.Point(165, 209)
-        Me.txtUnitPrice.Name = "txtUnitPrice"
-        Me.txtUnitPrice.Size = New System.Drawing.Size(215, 20)
-        Me.txtUnitPrice.TabIndex = 13
-        '
-        'lblHeadingDescription
-        '
-        Me.lblHeadingDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblHeadingDescription.Location = New System.Drawing.Point(18, 92)
-        Me.lblHeadingDescription.Name = "lblHeadingDescription"
-        Me.lblHeadingDescription.Size = New System.Drawing.Size(138, 20)
-        Me.lblHeadingDescription.TabIndex = 14
-        Me.lblHeadingDescription.Text = "Product Desciption"
-        '
-        'chkDiscontinued
-        '
-        Me.chkDiscontinued.AutoSize = True
-        Me.chkDiscontinued.Location = New System.Drawing.Point(165, 242)
-        Me.chkDiscontinued.Name = "chkDiscontinued"
-        Me.chkDiscontinued.Size = New System.Drawing.Size(15, 14)
-        Me.chkDiscontinued.TabIndex = 15
-        Me.chkDiscontinued.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(165, 36)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 20)
-        Me.TextBox1.TabIndex = 17
-        '
-        'SKU
-        '
-        Me.SKU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.SKU.Location = New System.Drawing.Point(18, 36)
-        Me.SKU.Name = "SKU"
-        Me.SKU.Size = New System.Drawing.Size(138, 20)
-        Me.SKU.TabIndex = 16
-        Me.SKU.Text = "SKU"
-        Me.SKU.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.lblHeadingName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblHeadingName.Location = New System.Drawing.Point(18, 68)
+        Me.lblHeadingName.Name = "lblHeadingName"
+        Me.lblHeadingName.Size = New System.Drawing.Size(138, 20)
+        Me.lblHeadingName.TabIndex = 2
+        Me.lblHeadingName.Text = "Product Name"
         '
         'btnNew
         '

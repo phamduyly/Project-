@@ -28,17 +28,16 @@ Public Class frmListOfHashtables
         lsListHashtables.Add(htDetails2)
 
         Dim htDetails As Hashtable = CType(lsListHashtables.Item(0), Hashtable)
-        Debug.Print("Item(0)")
-        Debug.Print("First name: " & CStr(htDetails1("Firstname")))
-        Debug.Print("Last name: " & CStr(htDetails1("Lastname")))
-        Debug.Print("DOB: " & CStr(htDetails1("DOB")))
+        MsgBox("Item(0)")
+        MsgBox("First name: " & CStr(htDetails1("Firstname")))
+        MsgBox("Last name: " & CStr(htDetails1("Lastname")))
+        MsgBox("DOB: " & CStr(htDetails1("DOB")))
 
         Dim htDetails3 As Hashtable = CType(lsListHashtables.Item(1), Hashtable)
-        Debug.Print("Item(1)")
-        Debug.Print("First name:" & CStr(htDetails2("Firstname")))
-        Debug.Print("Last name:" & CStr(htDetails2("Lastname")))
-        Debug.Print("DOB: " & CStr(htDetails2("DOB")))
-
+        MsgBox("Item(1)")
+        MsgBox("First name:" & CStr(htDetails2("Firstname")))
+        MsgBox("Last name:" & CStr(htDetails2("Lastname")))
+        MsgBox("DOB: " & CStr(htDetails2("DOB")))
 
     End Sub
 End Class

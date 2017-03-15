@@ -8,10 +8,7 @@ Imports System.IO
 'Insert data form
 
 Public Class frmInsertRecord
-    Dim provider As String
-    Dim dataFile As String
-    Dim connString As String
-
+  
 
 
     Public Const CONNECTION_STRING As String = _
@@ -26,6 +23,9 @@ Public Class frmInsertRecord
     End Sub
 
     Private Sub btnInsert_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInsert.Click
+        Dim provider As String
+        Dim dataFile As String
+        Dim connString As String
 
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
         dataFile = "C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-04.01\procurementDB.accdb"
@@ -41,7 +41,7 @@ Public Class frmInsertRecord
 
             Debug.Print("Connection String: " & oConnection.ConnectionString)
 
-            oConnection.Open()
+
             Dim oCommand As OleDbCommand = New OleDbCommand
             oCommand.Connection = oConnection
 

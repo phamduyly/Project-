@@ -23,8 +23,8 @@ Public Class Form1
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
-        provider = "Provider=Microsoft.ACE.OLEDB.15.0;Data Source="
-        dataFile = "C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Add and Clear\Add and Clear\testing2003.accdb"
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
+        dataFile = "C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Add and Clear\testing2003.mdb"
         connString = provider & dataFile
         myConnection.ConnectionString = connString
         myConnection.Open()
@@ -34,9 +34,9 @@ Public Class Form1
 
         Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
         cmd.Parameters.Add(New OleDbParameter("InvoiceID", CType(TextBox1.Text, String)))
-        cmd.Parameters.Add(New OleDbParameter("Items", CType(TextBox1.Text, String)))
-        cmd.Parameters.Add(New OleDbParameter("Cost", CType(TextBox1.Text, String)))
-        cmd.Parameters.Add(New OleDbParameter("Quantity", CType(TextBox1.Text, String)))
+        cmd.Parameters.Add(New OleDbParameter("Items", CType(TextBox2.Text, String)))
+        cmd.Parameters.Add(New OleDbParameter("Cost", CType(TextBox3.Text, String)))
+        cmd.Parameters.Add(New OleDbParameter("Quantity", CType(TextBox4.Text, String)))
 
         Try
             cmd.ExecuteNonQuery()

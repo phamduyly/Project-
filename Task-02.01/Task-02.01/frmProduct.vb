@@ -27,4 +27,8 @@ Public Class frmProduct
     Private Sub gbxInputFields_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles gbxInputFields.Enter
 
     End Sub
+
+    Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        
+    End Sub
 End Class
