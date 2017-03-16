@@ -88,6 +88,7 @@ Public Class frmInsertRecord
         oCommand.Prepare()
         MsgBox("SQL:" & oCommand.CommandText)
         oCommand.ExecuteNonQuery()
+        'line in order to import data to the database - therefore this is needed of oCommand.Open() and oCommand.Prepare()  and oCommand.Executive
 
     End Sub
 
