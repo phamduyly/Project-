@@ -2,69 +2,28 @@
 Option Strict On
 
 Imports System.Data.OleDb
-Imports System.IO
 
+Public Class ProductController
 
-'Insert data form
+    Public Const CONNECTION_STRING As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=ProcurementDB.accdb"
 
-Public Class frmInsertRecord
-  
-
-
-    Public Const CONNECTION_STRING As String = _
-        "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=procurementDB.accdb"
-
-    Private Sub frmInsertRecord_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the '_procurementDB_2003_DataSet.purchase_order' table. You can move, or remove it, as needed.
-        Me.Purchase_orderTableAdapter.Fill(Me._procurementDB_2003_DataSet.purchase_order)
-        'TODO: This line of code loads data into the '_procurementDB_2003_DataSet.employee' table. You can move, or remove it, as needed.
-        Me.EmployeeTableAdapter.Fill(Me._procurementDB_2003_DataSet.employee)
-
-    End Sub
-
-    Private Sub btnInsert_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInsert.Click
+    'what is the meaning of public sub, what is byref, byval  
+    'Insert method is sub routine 
+    Public Sub insert(ByVal htdata As Hashtable)
         Dim provider As String
         Dim dataFile As String
         Dim connString As String
         Dim myConnection As OleDbConnection = New OleDbConnection
 
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-        dataFile = "C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-04.02\procurementDB.accdb"
+        dataFile = "C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-04.05\Taks-04.05\bin\Debug\procurementDB.accdb"
         connString = provider & dataFile
         myConnection.ConnectionString = connString
         myConnection.Open()
 
-        'the update for able to insert the data into the database. the old method is unusable. Do not know why. The last line of code in the tutorial oConnection_
-        'do not have meaning, maybe that the old method and cannot be execute now.n 
-        'this is the code for importing an execute data right now, 
-
-        'Dim provider As String
-        'Dim dataFile As String
-        'Dim connString As String
-        'Dim myConnection As OleDbConnection = New OleDbConnection
-
-        'provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-        'dataFile = "C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-04.01\procurementDB.accdb"
-        'connString = provider & dataFile
-        'myConnection.ConnectionString = connString
-        'myConnection.Open()
-
-        Debug.Print("Connection String: " & myConnection.ConnectionString)
-
-
         Try
             Dim oCommand As OleDbCommand = New OleDbCommand
             oCommand.Connection = myConnection
-
-            Dim htdata As Hashtable = New Hashtable
-            htdata("SKU") = 13
-            htdata("ProductName") = "Folder"
-            htdata("ProductDescription") = "50 packs of manila folders"
-            htdata("Category") = "Stationery"
-            htdata("ReorderLevel") = 5
-            htdata("LeadTime") = 1
-            htdata("Discontinued") = 4.95
-
 
             oCommand.CommandText = "INSERT INTO product (SKU,product_name,product_description,category,reorder_level,lead_time,discontinued,unit_price) VALUES(?,?,?,?,?,?,?,?);"
 
@@ -91,16 +50,8 @@ Public Class frmInsertRecord
             oCommand.ExecuteNonQuery()
             'line in order to import data to the database - therefore this is needed of oCommand.Open() and oCommand.Prepare()  and oCommand.Executive
             MsgBox("the data is imported")
-
         Catch ex As Exception
             MsgBox("fail")
-
         End Try
-        
-
-
-
     End Sub
-
-   
 End Class
