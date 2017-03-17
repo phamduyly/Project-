@@ -105,7 +105,7 @@ Partial Class frmValidation
         Me.Controls.Add(Me.lblField1)
         Me.Controls.Add(Me.btnValidate)
         Me.Name = "frmValidation"
-        Me.Text = "Valiadate"
+        Me.Text = "  "
         CType(Me.picErrorField1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picErrorField2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
