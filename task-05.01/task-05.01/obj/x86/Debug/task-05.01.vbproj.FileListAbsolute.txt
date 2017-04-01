@@ -1,0 +1,3 @@
+C:\Users\s3594800\Desktop\task-05.01\task-05.01\obj\x86\Debug\task_05._01.Form1.resources
+C:\Users\s3594800\Desktop\task-05.01\task-05.01\obj\x86\Debug\task_05._01.Resources.resources
+C:\Users\s3594800\Desktop\task-05.01\task-05.01\obj\x86\Debug\task-05.01.vbproj.GenerateResource.Cache

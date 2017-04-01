@@ -22,29 +22,28 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnFindAll = New System.Windows.Forms.Button()
+        Me.findall = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btnFindAll
+        'findall
         '
-        Me.btnFindAll.Location = New System.Drawing.Point(104, 84)
-        Me.btnFindAll.Name = "btnFindAll"
-        Me.btnFindAll.Size = New System.Drawing.Size(75, 23)
-        Me.btnFindAll.TabIndex = 0
-        Me.btnFindAll.Text = "FindAll"
-        Me.btnFindAll.UseVisualStyleBackColor = True
+        Me.findall.Location = New System.Drawing.Point(92, 82)
+        Me.findall.Name = "findall"
+        Me.findall.Size = New System.Drawing.Size(75, 23)
+        Me.findall.TabIndex = 0
+        Me.findall.Text = "Button1"
+        Me.findall.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.btnFindAll)
+        Me.Controls.Add(Me.findall)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents btnFindAll As System.Windows.Forms.Button
-
+    Friend WithEvents findall As System.Windows.Forms.Button
 End Class
