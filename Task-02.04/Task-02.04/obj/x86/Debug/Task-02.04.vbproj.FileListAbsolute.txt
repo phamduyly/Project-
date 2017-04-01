@@ -16,3 +16,6 @@ C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\T
 C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.xml
 C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.pdb
 C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.04\Task-02.04\obj\x86\Debug\WindowsApplication1.frmValidation.resources
+C:\Users\DELL\Desktop\Project-\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.exe
+C:\Users\DELL\Desktop\Project-\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.xml
+C:\Users\DELL\Desktop\Project-\Task-02.04\Task-02.04\obj\x86\Debug\Task-02.04.pdb

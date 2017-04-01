@@ -1,0 +1,9 @@
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\bin\Debug\Task-05.02.exe
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\bin\Debug\Task-05.02.pdb
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\bin\Debug\Task-05.02.xml
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\obj\x86\Debug\Task_05._02.frmProduct.resources
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\obj\x86\Debug\Task_05._02.Resources.resources
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\obj\x86\Debug\Task-05.02.vbproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\obj\x86\Debug\Task-05.02.exe
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\obj\x86\Debug\Task-05.02.xml
+C:\Users\DELL\Desktop\Project-\Task-05.02\Task-05.02\obj\x86\Debug\Task-05.02.pdb

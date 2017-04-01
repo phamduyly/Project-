@@ -16,3 +16,6 @@ C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\T
 C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.exe
 C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.xml
 C:\Users\DELL\Google Drive\ISYS2116 - Infor system design_\Projects\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.pdb
+C:\Users\DELL\Desktop\Project-\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.exe
+C:\Users\DELL\Desktop\Project-\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.xml
+C:\Users\DELL\Desktop\Project-\Task-02.03\Task-02.03\obj\x86\Debug\Task-02.03.pdb
