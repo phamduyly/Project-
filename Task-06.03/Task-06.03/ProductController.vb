@@ -256,11 +256,12 @@ Public Class ProductController
 
         saveReport(sReportContent, sReportFilename)
 
-        Dim sParam As String = """" & Application.StartupPath & "\" & sReportFilename & """"""
+        Dim sParam As String = """" & Application.StartupPath & "\" & sReportFilename & """"
         Debug.Print("sParam: " & sParam)
 
-
         System.Diagnostics.Process.Start(sParam)
+
+        'rm the code system.Diagnostics. 
     End Sub
 
     Private Function generateReport01(ByVal lsData As List(Of Hashtable), ByVal sReportTitle As String) As String
@@ -278,7 +279,7 @@ Public Class ProductController
         sReportContent = sDoctype & vbCrLf & sHtmlStartTag & vbCrLf & sHeadTitle & vbCrLf & sBodyStartTag & vbCrLf & sReportHeading & vbCrLf
 
         '2.Generate the product table and its rows 
-        Dim sTable = generateTable(lsDate)
+        Dim sTable = generateTable(lsData)
         sReportContent &= sTable & vbCrLf
 
         '3.Generate the end of the HTML file 
@@ -307,56 +308,45 @@ Public Class ProductController
 
     Private Function generateTable(ByVal lsData As List(Of Hashtable)) As String
         'Generate the start of the table
-
+        'vbCrLf = down a line and going to the left or feed or st
         Dim sTable = "<table border""1"">" & vbCrLf
-
         Dim htSample As Hashtable = lsData.Item(0)
-
-        Dim lsKeys = htSample.Keys
+        'Dim lsKeys = htSample.Keys
+        Dim lsKeys As List(Of String) = New List(Of String)
+        lsKeys.Add("SKU")
+        lsKeys.Add("ProductName")
+        lsKeys.Add("ProductDescription")
+        lsKeys.Add("Category")
+        lsKeys.Add("ReorderLevel")
+        lsKeys.Add("LeadTime")
+        lsKeys.Add("Discontinued")
+        lsKeys.Add("UnitPrice")
 
 
 
         ' Generate the header row
-
-        Dim sHeaderRow = "<tr>" & vbCrLf
-
+        Dim sHeadderRow = "<tr>" & vbCrLf
         For Each key In lsKeys
-
-sHeaderRow &= "<th>" & CStr
-
+            sHeadderRow &= "<th>" & CStr(key) & "</th>" & vbCrLf
         Next
+        sHeadderRow &= "</tr>" & vbCrLf
+        Debug.Print("sHeaderRow: " & sHeadderRow)
+        sTable &= sHeadderRow
 
-sHeaderRow &amp;= &quot;&lt;/tr&gt;&quot; &amp; vbCrLf
-
-Debug.Print(&quot;sHeaderRow: &quot; &amp; sHeaderRow)
-
-sTable &amp;= sHeaderRow
-
-&#39; Generate the table rows
-
+        'Generate the table rows 
         For Each record In lsData
-
             Dim product As Hashtable = record
-
-Dim sTableRow = &quot;&lt;tr&gt;&quot; &amp; vbCrLf
+            Dim sTableRow = "<tr>" & vbCrLf
 
             For Each key In lsKeys
-
-sTableRow &amp;= &quot;&lt;td&gt;&quot; &amp; CStr(product(key)) &amp; &quot;&lt;/td&gt;&quot; &amp; vbCrLf
-
+                sTableRow &= "<td>" & CStr(product(key)) & "</td>" & vbCrLf
             Next
-
-sTableRow &amp;= &quot;&lt;/tr&gt;&quot; &amp; vbCrLf
-
-Debug.Print(&quot;sTableRow: &quot; &amp; sTableRow)
-
-sTable &amp;= sTableRow
-
+            sTableRow &= "</tr>" & vbCrLf
+            Debug.Print("sTableRow: " & sTableRow)
+            sTable &= sTableRow
         Next
-
-&#39; Generate the end of the table
-
-sTable &amp;= &quot;&lt;/table&gt;&quot; &amp; vbCrLf
+        'Generate the end of the table
+        sTable &= "</table>" & vbCrLf
 
         Return sTable
     End Function
