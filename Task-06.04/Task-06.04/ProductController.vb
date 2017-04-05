@@ -248,11 +248,8 @@ Public Class ProductController
 
         Dim lsData = findAll()
         Dim sReportTitle = "Product Report by ..."
-
         Dim sReportContent = generateReport01(lsData, sReportTitle)
-
         Dim sReportFilename = "ProductReport-01.html"
-
 
         saveReport(sReportContent, sReportFilename)
 
@@ -350,5 +347,176 @@ Public Class ProductController
         sTable &= "</table>" & vbCrLf
 
         Return sTable
+    End Function
+
+
+    'BREAK REPORT:
+    'Need to summary all the funciton needed in order to run this function 
+    '
+
+    Public Sub createBreakReport()
+        Debug.Print("CreatBreakReport...")
+
+        Dim lsData = findAll()
+        Dim sReportTitle = "Product Control Break Report "
+        Dim sReportContent = generateBreakReport(lsData, sReportTitle)
+        'lsData is ... sReporttiltle is 
+        Dim sReportFilename = "ProductBreakReport.html"
+        saveReport(sReportContent, sReportFilename)
+
+        Dim sParam As String = """" & Application.StartupPath & "\" & sReportFilename & """"
+        ' the """"" can fix into the access to the file path
+        Debug.Print("sParam: " & sParam)
+
+        System.Diagnostics.Process.Start(sParam)
+
+    End Sub
+
+    Private Function generateBreakReport(ByVal lsData As List(Of Hashtable), ByVal sReportTitle As String) As String
+        'This part seem like the code is going to take the value from 1.the lsDATA whihc was dimed before in the clas
+        'and the sReportitle whihc is going to be printed in the things ]
+
+        Debug.Print("GenerateBreakeReport ...")
+
+        Dim sReportContent As String
+
+        '1.Generate the start of the HTML file
+
+        Dim sDoctype As String = "<!DOCTYPE html>"
+        Dim sHtmlStartTag As String = "<html lang=""eng"">"
+        Dim sHeadTitle As String = "<head><title>" & sReportTitle & "</title></head>"
+        Dim sBodyStartTag As String = "<body>"
+        Dim sReportHeading As String = "<h1>" & sReportTitle & "</h1>"
+        sReportContent = sDoctype & vbCrLf & sHtmlStartTag & vbCrLf & sHeadTitle & vbCrLf & sBodyStartTag & vbCrLf & sReportHeading & vbCrLf
+
+        '2.Generate the product table and its rows 
+        Dim sTable = generateControlBreakeTale(lsData)
+        sReportContent &= sTable & vbCrLf
+
+
+        '3.Generate the end of the HTML file 
+        Dim sBodyEndTag As String = "</body>"
+        Dim sHTMLEndTag As String = "</html>"
+        sReportContent &= sBodyEndTag & vbCrLf & sHTMLEndTag
+
+
+
+        Return sReportContent
+
+    End Function
+
+    Private Function generateControlBreakeTale(ByVal lsData As List(Of Hashtable)) As String
+        'byVal do not needed to be dimed again in the code 
+
+        'Generate the start of the table
+        'vbCrLf = down a line and going to the left or feed or st
+        Dim sTable = "<table border""1"">" & vbCrLf
+        Dim htSample As Hashtable = lsData.Item(0)
+        'Dim lsKeys = htSample.Keys
+        Dim lsKeys As List(Of String) = New List(Of String)
+        lsKeys.Add("SKU")
+        lsKeys.Add("ProductName")
+        lsKeys.Add("ProductDescription")
+        lsKeys.Add("Category")
+        lsKeys.Add("ReorderLevel")
+        lsKeys.Add("LeadTime")
+        lsKeys.Add("Discontinued")
+        lsKeys.Add("UnitPrice")
+
+
+
+        ' Generate the header row
+        Dim sHeadderRow = "<tr>" & vbCrLf
+        For Each key In lsKeys
+            sHeadderRow &= "<th>" & CStr(key) & "</th>" & vbCrLf
+        Next
+        sHeadderRow &= "</tr>" & vbCrLf
+        Debug.Print("sHeaderRow: " & sHeadderRow)
+        sTable &= sHeadderRow
+
+        'Generate the table rows 
+        sTable &= generateTableRows(lsData, lsKeys)
+
+        'Generate the end of the table 
+        sTable &= "</table>" & vbCrLf
+
+        'What is the difference between the 2 code 
+        'For Each record In lsData
+        '    Dim product As Hashtable = record
+        '    Dim sTableRow = "<tr>" & vbCrLf
+
+        '    For Each key In lsKeys
+        '        sTableRow &= "<td>" & CStr(product(key)) & "</td>" & vbCrLf
+        '    Next
+        '    sTableRow &= "</tr>" & vbCrLf
+        '    Debug.Print("sTableRow: " & sTableRow)
+        '    sTable &= sTableRow
+        'Next
+        ''Generate the end of the table
+        'sTable &= "</table>" & vbCrLf
+
+
+
+        Return sTable
+    End Function
+
+
+    Private Function generateTableRows(ByVal lsData As List(Of Hashtable), ByVal lsKeys As List(Of String)) As String
+
+        '1.Instalisation 
+        Dim sRows As String = ""
+        Dim sTableRow As String
+        Dim iCountRecordsPerCategory As Integer = 0
+        Dim bFirstTime As Boolean = True
+        Dim sCurrentControlField As String = ""
+        Dim sPreviousControlField As String = ""
+
+        '2. Loop through the list of hashtables
+        For Each record In lsData
+
+            '2a. Get a product and set the current key
+            Dim product As Hashtable = record
+            sCurrentControlField = CStr(product("Category"))
+
+            '2b. Do not check for control break on the first iteration of the loop
+            If bFirstTime Then
+                bFirstTime = False
+            Else
+                'Output total row if change in control field
+                'And reset the total
+                If sCurrentControlField <> sPreviousControlField Then
+                    sTableRow = "<tr><td colspan = """ & lsKeys.Count & """>" _
+                        & " Total products in " & sPreviousControlField _
+                        & " category: " & iCountRecordsPerCategory _
+                        & "</td></tr>" _
+                        & vbCrLf
+                    sRows &= sTableRow
+                    iCountRecordsPerCategory = 0
+                End If
+            End If
+
+            ' 2c. Output a normal row for every pass thru' the list
+            sTableRow = "<tr>" & vbCrLf
+            For Each key In lsKeys
+                sTableRow &= "<td>" & CStr(product(key)) & "</td>" & vbCrLf
+            Next
+            sTableRow &= "</tr>" & vbCrLf
+            Debug.Print("sTableRow: " & sTableRow)
+            sRows &= sTableRow
+
+            '2d. Update control field and increment total
+            sPreviousControlField = sCurrentControlField
+            iCountRecordsPerCategory += 1
+        Next
+
+        '3. After the loop, need to output the last total row
+        sTableRow = "<tr><td colspan = """ & lsKeys.Count & """>" _
+                        & " Total products in " & sCurrentControlField _
+                        & " category: " & iCountRecordsPerCategory _
+                        & "</td></tr>" _
+                        & vbCrLf
+        sRows &= sTableRow
+
+        Return sRows
     End Function
 End Class
