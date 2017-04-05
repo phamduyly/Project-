@@ -28,9 +28,9 @@ Public Class frmProduct
 
     Private Sub populateFormFiels(ByVal htData As Hashtable)
         txtName.Text = CStr(htData("ProductName"))
-        txtDescription.Text = CStr(htData("Description"))
+        txtDescription.Text = CStr(htData("ProductDescription"))
         txtCategory.Text = CStr(htData("Category"))
-        txtRecorderLevel.Text = CStr(htData("Reorderlevel"))
+        txtReorderLevel.Text = CStr(htData("ReorderLevel"))
         txtLeadTime.Text = CStr(htData("LeadTime"))
         txtUnitPrice.Text = CStr(htData("UnitPrice"))
         If CInt(htData("Discontinued")) = 1 Then
@@ -42,11 +42,32 @@ Public Class frmProduct
 
     End Sub
 
-    Private Sub btnUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdate.Click
 
-    End Sub
 
     Private Sub btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelete.Click
+        Dim oController As ProductController = New ProductController
+        Dim sId = txtSKU.Text
+        Dim iNumRows = oController.delete(sId)
+
+        'This code is not operate ? - do not know the reason why 
+        'REally need to trade back the meanings of iNumrows
+        If iNumRows = 1 Then
+            ClearForm()
+            Debug.Print("The record was deleted. Use the find button to check")
+        Else
+            Debug.Print("The record was not deleted")
+        End If
+    End Sub
+
+    Private Sub clearform()
+        txtSKU.Clear()
+        txtName.Clear()
+        txtDescription.Clear()
+        txtCategory.Clear()
+        txtReorderLevel.Clear()
+        txtLeadTime.Clear()
+        txtUnitPrice.Clear()
+        chkDiscontinued.Checked = False
 
     End Sub
 End Class

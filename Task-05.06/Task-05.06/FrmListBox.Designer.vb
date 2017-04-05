@@ -22,40 +22,40 @@ Partial Class frmListBox
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lstProduct = New System.Windows.Forms.ListBox()
+        Me.btnList = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstProduct
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(43, 48)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(198, 95)
-        Me.ListBox1.TabIndex = 0
+        Me.lstProduct.FormattingEnabled = True
+        Me.lstProduct.Location = New System.Drawing.Point(43, 48)
+        Me.lstProduct.Name = "lstProduct"
+        Me.lstProduct.Size = New System.Drawing.Size(464, 355)
+        Me.lstProduct.TabIndex = 0
         '
-        'Button1
+        'btnList
         '
-        Me.Button1.Location = New System.Drawing.Point(94, 167)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 34)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnList.Location = New System.Drawing.Point(188, 431)
+        Me.btnList.Name = "btnList"
+        Me.btnList.Size = New System.Drawing.Size(99, 34)
+        Me.btnList.TabIndex = 1
+        Me.btnList.Text = "List"
+        Me.btnList.UseVisualStyleBackColor = True
         '
         'frmListBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.ClientSize = New System.Drawing.Size(535, 520)
+        Me.Controls.Add(Me.btnList)
+        Me.Controls.Add(Me.lstProduct)
         Me.Name = "frmListBox"
         Me.Text = "Product List"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lstProduct As System.Windows.Forms.ListBox
+    Friend WithEvents btnList As System.Windows.Forms.Button
 
 End Class

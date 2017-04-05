@@ -29,7 +29,7 @@ Partial Class frmProduct
         Me.lblHeadingDescription = New System.Windows.Forms.Label()
         Me.txtUnitPrice = New System.Windows.Forms.TextBox()
         Me.txtLeadTime = New System.Windows.Forms.TextBox()
-        Me.txtRecorderLevel = New System.Windows.Forms.TextBox()
+        Me.txtReorderLevel = New System.Windows.Forms.TextBox()
         Me.txtCategory = New System.Windows.Forms.TextBox()
         Me.lblHeadingDiscontinued = New System.Windows.Forms.Label()
         Me.lblHeadingUnitPrice = New System.Windows.Forms.Label()
@@ -56,7 +56,7 @@ Partial Class frmProduct
         Me.gbxInputFields.Controls.Add(Me.lblHeadingDescription)
         Me.gbxInputFields.Controls.Add(Me.txtUnitPrice)
         Me.gbxInputFields.Controls.Add(Me.txtLeadTime)
-        Me.gbxInputFields.Controls.Add(Me.txtRecorderLevel)
+        Me.gbxInputFields.Controls.Add(Me.txtReorderLevel)
         Me.gbxInputFields.Controls.Add(Me.txtCategory)
         Me.gbxInputFields.Controls.Add(Me.lblHeadingDiscontinued)
         Me.gbxInputFields.Controls.Add(Me.lblHeadingUnitPrice)
@@ -122,12 +122,12 @@ Partial Class frmProduct
         Me.txtLeadTime.Size = New System.Drawing.Size(215, 20)
         Me.txtLeadTime.TabIndex = 12
         '
-        'txtRecorderLevel
+        'txtReorderLevel
         '
-        Me.txtRecorderLevel.Location = New System.Drawing.Point(165, 149)
-        Me.txtRecorderLevel.Name = "txtRecorderLevel"
-        Me.txtRecorderLevel.Size = New System.Drawing.Size(215, 20)
-        Me.txtRecorderLevel.TabIndex = 11
+        Me.txtReorderLevel.Location = New System.Drawing.Point(165, 149)
+        Me.txtReorderLevel.Name = "txtReorderLevel"
+        Me.txtReorderLevel.Size = New System.Drawing.Size(215, 20)
+        Me.txtReorderLevel.TabIndex = 11
         '
         'txtCategory
         '
@@ -281,7 +281,7 @@ Partial Class frmProduct
     Friend WithEvents lblHeadingDescription As System.Windows.Forms.Label
     Friend WithEvents txtUnitPrice As System.Windows.Forms.TextBox
     Friend WithEvents txtLeadTime As System.Windows.Forms.TextBox
-    Friend WithEvents txtRecorderLevel As System.Windows.Forms.TextBox
+    Friend WithEvents txtReorderLevel As System.Windows.Forms.TextBox
     Friend WithEvents txtCategory As System.Windows.Forms.TextBox
     Friend WithEvents lblHeadingDiscontinued As System.Windows.Forms.Label
     Friend WithEvents lblHeadingUnitPrice As System.Windows.Forms.Label
