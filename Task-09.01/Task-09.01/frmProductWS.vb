@@ -6,9 +6,11 @@ Option Strict On
 'Author:        Ly Pham 
 'Date:  3/03/2017
 
-Public Class frmProduct
 
-    Private Sub btnFind_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFind.Click
+
+Public Class frmProductWS
+
+    Private Sub btnFind_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles frmFindAll.Click
         Dim oController As ProductController = New ProductController
 
         Dim sId = txtSKU.Text

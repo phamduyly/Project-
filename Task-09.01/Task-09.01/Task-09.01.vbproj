@@ -79,10 +79,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduct.Designer.vb">
-      <DependentUpon>frmProduct.vb</DependentUpon>
+    <Compile Include="frmProductWS.Designer.vb">
+      <DependentUpon>frmProductWS.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmProduct.vb">
+    <Compile Include="frmProductWS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -102,6 +102,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmProductWS.resx">
+      <DependentUpon>frmProductWS.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

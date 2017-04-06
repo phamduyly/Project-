@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmProduct
+Partial Class frmProductWS
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -39,11 +39,7 @@ Partial Class frmProduct
         Me.txtDescription = New System.Windows.Forms.TextBox()
         Me.lblHeadingCategory = New System.Windows.Forms.Label()
         Me.lblHeadingName = New System.Windows.Forms.Label()
-        Me.btnNew = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnDelete = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnFind = New System.Windows.Forms.Button()
+        Me.frmFindAll = New System.Windows.Forms.Button()
         Me.gbxInputFields.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -203,63 +199,23 @@ Partial Class frmProduct
         Me.lblHeadingName.TabIndex = 2
         Me.lblHeadingName.Text = "Product Name"
         '
-        'btnNew
+        'frmFindAll
         '
-        Me.btnNew.Location = New System.Drawing.Point(398, 48)
-        Me.btnNew.Name = "btnNew"
-        Me.btnNew.Size = New System.Drawing.Size(215, 20)
-        Me.btnNew.TabIndex = 1
-        Me.btnNew.Text = "New"
-        Me.btnNew.UseVisualStyleBackColor = True
+        Me.frmFindAll.Location = New System.Drawing.Point(398, 48)
+        Me.frmFindAll.Name = "frmFindAll"
+        Me.frmFindAll.Size = New System.Drawing.Size(215, 20)
+        Me.frmFindAll.TabIndex = 5
+        Me.frmFindAll.Text = "Find all"
+        Me.frmFindAll.UseVisualStyleBackColor = True
         '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(398, 80)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(215, 20)
-        Me.btnSave.TabIndex = 2
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Location = New System.Drawing.Point(397, 106)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(215, 20)
-        Me.btnDelete.TabIndex = 3
-        Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.Location = New System.Drawing.Point(397, 252)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(215, 20)
-        Me.btnClose.TabIndex = 4
-        Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
-        'btnFind
-        '
-        Me.btnFind.Location = New System.Drawing.Point(397, 132)
-        Me.btnFind.Name = "btnFind"
-        Me.btnFind.Size = New System.Drawing.Size(215, 20)
-        Me.btnFind.TabIndex = 5
-        Me.btnFind.Text = "Find"
-        Me.btnFind.UseVisualStyleBackColor = True
-        '
-        'frmProduct
+        'frmProductWS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(624, 312)
-        Me.Controls.Add(Me.btnFind)
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnDelete)
-        Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.btnNew)
+        Me.Controls.Add(Me.frmFindAll)
         Me.Controls.Add(Me.gbxInputFields)
-        Me.Name = "frmProduct"
+        Me.Name = "frmProductWS"
         Me.Text = "Product"
         Me.gbxInputFields.ResumeLayout(False)
         Me.gbxInputFields.PerformLayout()
@@ -283,10 +239,6 @@ Partial Class frmProduct
     Friend WithEvents txtSKU As System.Windows.Forms.TextBox
     Friend WithEvents SKU As System.Windows.Forms.Label
     Friend WithEvents chkDiscontinued As System.Windows.Forms.CheckBox
-    Friend WithEvents btnNew As System.Windows.Forms.Button
-    Friend WithEvents btnSave As System.Windows.Forms.Button
-    Friend WithEvents btnDelete As System.Windows.Forms.Button
-    Friend WithEvents btnClose As System.Windows.Forms.Button
-    Friend WithEvents btnFind As System.Windows.Forms.Button
+    Friend WithEvents frmFindAll As System.Windows.Forms.Button
 
 End Class
