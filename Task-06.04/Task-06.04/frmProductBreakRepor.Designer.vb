@@ -23,6 +23,7 @@ Partial Class frmProductBreakReport
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnReport = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'btnReport
@@ -34,11 +35,20 @@ Partial Class frmProductBreakReport
         Me.btnReport.Text = "Create Break Report "
         Me.btnReport.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(67, 51)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 1
+        '
         'frmProductBreakReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.btnReport)
         Me.Name = "frmProductBreakReport"
         Me.Text = "Product Break Report"
@@ -46,5 +56,6 @@ Partial Class frmProductBreakReport
 
     End Sub
     Friend WithEvents btnReport As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
