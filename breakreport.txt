@@ -1,0 +1,43 @@
+sHeaderRow: <tr>
+<th>SKU</th>
+<th>ProductName</th>
+<th>ProductDescription</th>
+<th>Category</th>
+<th>ReorderLevel</th>
+<th>LeadTime</th>
+<th>Discontinued</th>
+<th>UnitPrice</th>
+</tr>
+
+sTableRow: <tr>
+<td>1</td>
+<td>Paper ream</td>
+<td>80gsm 500 sheets</td>
+<td>Stationery</td>
+<td>50</td>
+<td>3</td>
+<td>0</td>
+<td>12.58</td>
+</tr>
+
+sTableRow: <tr>
+<td>2</td>
+<td>Plastic Pockets</td>
+<td>100 pack</td>
+<td>Stationery</td>
+<td>10</td>
+<td>2</td>
+<td>1</td>
+<td>3.97</td>
+</tr>
+
+sTableRow: <tr>
+<td>3</td>
+<td>Desk chair</td>
+<td>Standard gas-lift chair</td>
+<td>Furniture</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>89.99</td>
+</tr>
