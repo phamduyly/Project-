@@ -261,7 +261,7 @@ Public Class ProductController
 
         'rm the code system.Diagnostics. 
     End Sub
-
+    ' whyy this oone is private fucntion 
     Private Function generateReport01(ByVal lsData As List(Of Hashtable), ByVal sReportTitle As String) As String
         Debug.Print("GenerateReport01 ...")
 
