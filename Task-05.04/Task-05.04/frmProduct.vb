@@ -70,4 +70,8 @@ Public Class frmProduct
         chkDiscontinued.Checked = False
 
     End Sub
+
+    Private Sub frmProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
