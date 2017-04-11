@@ -38,6 +38,7 @@ Partial Class frmProductBreakReport
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"creatReport01()", "createBreakReport()"})
         Me.ComboBox1.Location = New System.Drawing.Point(67, 51)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
