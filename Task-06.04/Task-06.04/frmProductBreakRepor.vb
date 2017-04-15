@@ -48,6 +48,16 @@ Public Class frmProductBreakReport
             oController.createBreakReport()
         End If
 
+        'Section for doing all checked box 
+        'Idea for checked bx for alll 
+
+
+        '    If bAllFieldsValid Then
+        '        MsgBox("all fields are valid")
+        '    Else
+        '        MsgBox("one of the fields was invalid")
+        '    End If
+        'End Sub
 
 
 
@@ -66,7 +76,7 @@ Public Class frmProductBreakReport
     End Sub
 
     Private Sub txt1_TextChanged(sender As Object, e As EventArgs) Handles txt1.TextChanged
-      
+
     End Sub
 
     Private Sub bt2_Click(sender As Object, e As EventArgs) Handles bt2.Click
