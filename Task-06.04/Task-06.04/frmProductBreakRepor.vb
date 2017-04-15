@@ -11,14 +11,25 @@ Public Class frmProductBreakReport
     End Sub
 
     Private Sub btnReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReport.Click
-        Dim oController As ProductController = New ProductController
+        'Dim oController As ProductController = New ProductController
 
-        If ComboBox1.Text = "createReport01()" Then
+        'If ComboBox1.Text = "createReport01()" Then
+        '    oController.createReport01()
+        'ElseIf ComboBox1.Text = "createBreakReport()" Then
+        '    oController.createBreakReport()
+        'Else
+        '    MsgBox("you have to choose a type of report")
+        'End If
+
+        Dim oController As New ProductController
+
+        If chk1.Checked Then
             oController.createReport01()
-        ElseIf ComboBox1.Text = "createBreakReport()" Then
+        ElseIf chk2.Checked Then
             oController.createBreakReport()
         Else
-            MsgBox("you have to choose a type of report")
+            MsgBox("Please choose one of report kind")
+
         End If
 
 
@@ -26,4 +37,7 @@ Public Class frmProductBreakReport
 
 
 
+    Private Sub frmProductBreakReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
