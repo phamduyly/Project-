@@ -26,6 +26,10 @@ Partial Class frmProductBreakReport
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.chk1 = New System.Windows.Forms.CheckBox()
         Me.chk2 = New System.Windows.Forms.CheckBox()
+        Me.RadBtnReport = New System.Windows.Forms.RadioButton()
+        Me.RadBtnBreakReport = New System.Windows.Forms.RadioButton()
+        Me.txt1 = New System.Windows.Forms.TextBox()
+        Me.bt2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnReport
@@ -66,11 +70,54 @@ Partial Class frmProductBreakReport
         Me.chk2.Text = "Break Report"
         Me.chk2.UseVisualStyleBackColor = True
         '
+        'RadBtnReport
+        '
+        Me.RadBtnReport.AutoSize = True
+        Me.RadBtnReport.Location = New System.Drawing.Point(84, 185)
+        Me.RadBtnReport.Name = "RadBtnReport"
+        Me.RadBtnReport.Size = New System.Drawing.Size(57, 17)
+        Me.RadBtnReport.TabIndex = 4
+        Me.RadBtnReport.TabStop = True
+        Me.RadBtnReport.Text = "Report"
+        Me.RadBtnReport.UseVisualStyleBackColor = True
+        '
+        'RadBtnBreakReport
+        '
+        Me.RadBtnBreakReport.AutoSize = True
+        Me.RadBtnBreakReport.Location = New System.Drawing.Point(84, 208)
+        Me.RadBtnBreakReport.Name = "RadBtnBreakReport"
+        Me.RadBtnBreakReport.Size = New System.Drawing.Size(91, 17)
+        Me.RadBtnBreakReport.TabIndex = 5
+        Me.RadBtnBreakReport.TabStop = True
+        Me.RadBtnBreakReport.Text = "Break Report "
+        Me.RadBtnBreakReport.UseVisualStyleBackColor = True
+        '
+        'txt1
+        '
+        Me.txt1.Location = New System.Drawing.Point(323, 51)
+        Me.txt1.Multiline = True
+        Me.txt1.Name = "txt1"
+        Me.txt1.Size = New System.Drawing.Size(332, 248)
+        Me.txt1.TabIndex = 6
+        '
+        'bt2
+        '
+        Me.bt2.Location = New System.Drawing.Point(84, 267)
+        Me.bt2.Name = "bt2"
+        Me.bt2.Size = New System.Drawing.Size(147, 23)
+        Me.bt2.TabIndex = 7
+        Me.bt2.Text = "Create Break Report "
+        Me.bt2.UseVisualStyleBackColor = True
+        '
         'frmProductBreakReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(877, 461)
+        Me.Controls.Add(Me.bt2)
+        Me.Controls.Add(Me.txt1)
+        Me.Controls.Add(Me.RadBtnBreakReport)
+        Me.Controls.Add(Me.RadBtnReport)
         Me.Controls.Add(Me.chk2)
         Me.Controls.Add(Me.chk1)
         Me.Controls.Add(Me.ComboBox1)
@@ -85,5 +132,9 @@ Partial Class frmProductBreakReport
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents chk1 As System.Windows.Forms.CheckBox
     Friend WithEvents chk2 As System.Windows.Forms.CheckBox
+    Friend WithEvents RadBtnReport As System.Windows.Forms.RadioButton
+    Friend WithEvents RadBtnBreakReport As System.Windows.Forms.RadioButton
+    Friend WithEvents txt1 As System.Windows.Forms.TextBox
+    Friend WithEvents bt2 As System.Windows.Forms.Button
 
 End Class
