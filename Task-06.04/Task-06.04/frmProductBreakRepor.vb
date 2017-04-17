@@ -1,15 +1,21 @@
 ﻿Option Strict On
 Option Explicit On
 
+Imports System.IO
+
+
 
 Public Class frmProductBreakReport
    
+
+
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
 
     End Sub
 
     Private Sub btnReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReport.Click
+
         '1. combobox 
 
 
@@ -26,6 +32,8 @@ Public Class frmProductBreakReport
         '2.checked box 
         If chk1.Checked Then
             oController.createReport01()
+
+
         End If
 
         If chk2.Checked Then
@@ -67,7 +75,12 @@ Public Class frmProductBreakReport
 
 
     Private Sub frmProductBreakReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Dim tooltip1 As New ToolTip
+        tooltip1.SetToolTip(btnReport, "click this to see the report")
+        tooltip1.SetToolTip(chk1, "Create normal report")
+        tooltip1.SetToolTip(txt1, "testig")
+        tooltip1.SetToolTip(RadBtnBreakReport, "testing")
+        tooltip1.SetToolTip(ComboBox1, "Choose kind of report")
     End Sub
 
     Private Sub RadBtnReport_CheckedChanged(sender As Object, e As EventArgs) Handles RadBtnReport.CheckedChanged
