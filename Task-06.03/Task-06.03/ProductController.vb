@@ -274,7 +274,14 @@ Public Class ProductController
 
         Dim sDoctype As String = "<!DOCTYPE html>"
         Dim sHtmlStartTag As String = "<html lang=""eng"">"
-        Dim sHeadTitle As String = "<head><title>" & sReportTitle & "</title></head>"
+        Dim sHeadTitle As String = "<head>" & vbCrLf & _
+            "<title>" & sReportTitle & "</title>" & vbCrLf & _
+        "<meta charset=""utf-8"">" & vbCrLf & _
+        "<meta name=""viewport"" content=""width=device-width, initial-scale=1"">" & vbCrLf & _
+        "<link rel=""stylesheet"" href=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"">" & vbCrLf & _
+        "<script src=""https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js""></script>" & vbCrLf & _
+        "<script src=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js""></script>" & vbCrLf & _
+        "</head>"
         Dim sBodyStartTag As String = "<body>"
         Dim sReportHeading As String = "<h1>" & sReportTitle & "</h1>"
         sReportContent = sDoctype & vbCrLf & sHtmlStartTag & vbCrLf & sHeadTitle & vbCrLf & sBodyStartTag & vbCrLf & sReportHeading & vbCrLf
@@ -310,7 +317,7 @@ Public Class ProductController
     Private Function generateTable(ByVal lsData As List(Of Hashtable)) As String
         'Generate the start of the table
         'vbCrLf = down a line and going to the left or feed or st
-        Dim sTable = "<table border""1"">" & vbCrLf
+        Dim sTable = "<table class =""table table-hover"">" & vbCrLf
         Dim htSample As Hashtable = lsData.Item(0)
         'Dim lsKeys = htSample.Keys
         Dim lsKeys As List(Of String) = New List(Of String)

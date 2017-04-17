@@ -6,8 +6,7 @@ Public Class frmProductBreakReport
 
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        ComboBox1.Items.Add("createReport01()")
-        ComboBox1.Items.Add("createBreakReport()")
+
     End Sub
 
     Private Sub btnReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReport.Click
