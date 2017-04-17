@@ -25,11 +25,14 @@ Public Class frmValidation
         'End If
 
         bIsValid = IsNumeric(txtField1.Text)
+
+
         If bIsValid Then
             picErrorField1.Visible = False
         Else
             picErrorField1.Visible = True
             tt.SetToolTip(picErrorField1, "Value is not numeric")
+            'Me.ToolTip1.SetToolTip(picErrorField1, "this is bal bal")
             bAllFieldsValid = False
         End If
 

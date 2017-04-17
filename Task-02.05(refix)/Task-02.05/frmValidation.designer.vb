@@ -22,6 +22,7 @@ Partial Class frmValidation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnValidate = New System.Windows.Forms.Button()
         Me.lblField1 = New System.Windows.Forms.Label()
         Me.txtField1 = New System.Windows.Forms.TextBox()
@@ -29,6 +30,7 @@ Partial Class frmValidation
         Me.lblField2 = New System.Windows.Forms.Label()
         Me.picErrorField1 = New System.Windows.Forms.PictureBox()
         Me.picErrorField2 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.picErrorField1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picErrorField2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -64,6 +66,7 @@ Partial Class frmValidation
         Me.txtField2.Name = "txtField2"
         Me.txtField2.Size = New System.Drawing.Size(100, 20)
         Me.txtField2.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.txtField2, "Add value into here")
         '
         'lblField2
         '
@@ -92,6 +95,11 @@ Partial Class frmValidation
         Me.picErrorField2.TabIndex = 6
         Me.picErrorField2.TabStop = False
         '
+        'ToolTip1
+        '
+        Me.ToolTip1.OwnerDraw = True
+        Me.ToolTip1.ToolTipTitle = "It is not alphanumeric"
+        '
         'frmValidation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -119,5 +127,6 @@ Partial Class frmValidation
     Friend WithEvents lblField2 As System.Windows.Forms.Label
     Friend WithEvents picErrorField1 As System.Windows.Forms.PictureBox
     Friend WithEvents picErrorField2 As System.Windows.Forms.PictureBox
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 
 End Class
