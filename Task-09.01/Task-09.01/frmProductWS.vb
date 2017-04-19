@@ -6,7 +6,11 @@ Option Strict On
 'Author:        Ly Pham 
 'Date:  3/03/2017
 
+Imports System.Net.Http
+Imports System.Text
 
+
+'package tht help finding the package 
 
 Public Class frmProductWS
 
@@ -44,4 +48,7 @@ Public Class frmProductWS
 
     End Sub
 
+    Private Sub frmProductWS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
